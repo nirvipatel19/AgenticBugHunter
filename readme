@@ -1,2 +1,169 @@
-Everything works fine we are getting the output as needed in order to run the code we just need to run the main.py file 
-I have also added an extra Api key incase we hit the limit 
+# Agentic AI Bug Hunter
+
+## Overview
+
+Agentic AI Bug Hunter is a multi-agent AI system designed to automatically analyze source code, detect potential bugs, and generate structured vulnerability reports using Large Language Models (LLMs).
+
+This project demonstrates how Agentic AI architecture can be applied to automated code review and cybersecurity analysis.
+
+---
+
+## Objective
+
+The primary objective of this project is to:
+
+* Automatically detect bugs and vulnerabilities in source code
+* Implement a multi-agent AI workflow
+* Use LLM reasoning for intelligent bug analysis
+* Generate structured and exportable reports
+
+---
+
+## System Architecture
+
+The system follows an Agent-based workflow:
+
+Input Code / Documents
+→ Retriever Agent
+→ Analyzer Agent
+→ LLM Reasoning
+→ Structured Bug Report (CSV)
+
+### Retriever Agent
+
+* Retrieves relevant context from documents
+* Improves reasoning by providing structured input to the analyzer
+
+### Analyzer Agent
+
+* Analyzes code logic
+* Detects potential bugs and vulnerabilities
+* Generates structured findings
+
+### LLM Integration
+
+* Provides intelligent reasoning
+* Generates explanations and suggested fixes
+* Assigns severity levels
+
+---
+
+## Project Structure
+
+AGENTIC-AI-BUGDETECTOR/
+
+agents/              - Contains Analyzer and Retriever agents
+documents/           - Input code or logs for analysis
+server/              - Backend/API logic (if applicable)
+main.py              - Main execution file
+output.csv           - Generated bug report
+requirements.txt     - Python dependencies
+.env                 - Environment variables
+README.md            - Project documentation
+
+---
+
+## Tech Stack
+
+* Python
+* Large Language Models (LLMs)
+* Pandas
+* python-dotenv
+* Flask / FastAPI (if server used)
+* CSV Reporting
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/agentic-ai-bug-detector.git
+cd agentic-ai-bug-detector
+
+### 2. Create Virtual Environment
+
+python -m venv venv
+
+Activate:
+
+Windows:
+venv\Scripts\activate
+
+Mac/Linux:
+source venv/bin/activate
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+### 4. Add Environment Variables
+
+Create a `.env` file and add:
+
+OPENAI_API_KEY=your_api_key_here
+
+---
+
+## Running the Project
+
+python main.py
+
+The system will:
+
+* Load input documents
+* Execute Retriever Agent
+* Execute Analyzer Agent
+* Generate structured bug report
+* Save results to output.csv
+
+---
+
+## Output Format
+
+The generated CSV report typically includes:
+
+* File Name
+* Line Number
+* Bug Type
+* Severity
+* Description
+* Suggested Fix
+* Confidence Score
+
+---
+
+## Key Features
+
+* Multi-Agent AI Architecture
+* LLM-powered code reasoning
+* Automated bug detection
+* Structured reporting
+* Modular and scalable design
+
+---
+
+## Future Enhancements
+
+* Vector database integration
+* Web-based dashboard
+* CI/CD pipeline integration
+* Real-time API-based scanning
+* Severity prediction model
+
+---
+
+## Author
+
+Developed as part of an advanced AI systems project demonstrating:
+
+* Agentic AI design
+* LLM orchestration
+* Intelligent bug detection
+* Applied cybersecurity solutions
+
+---
+
+## License
+
+This project is intended for educational and research purposes.
