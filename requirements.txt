@@ -1,0 +1,11 @@
+pandas
+openai
+python-dotenv
+huggingface-hub
+llama-index
+llama-index-embeddings-huggingface
+fastmcp
+torch
+transformers
+sentence-transformers
+langchain

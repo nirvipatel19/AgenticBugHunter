@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "B-15",
+			"path": ".."
+		},
+		{
+			"name": "server",
+			"path": "../../hackathon/mcp/server"
+		}
+	],
+	"settings": {}
+}

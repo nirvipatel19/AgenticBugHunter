@@ -1,0 +1,22 @@
+# Virtual environments
+venv/
+.venv/
+hck/
+Lib/
+Scripts/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large ML files
+*.pt
+*.pth
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
